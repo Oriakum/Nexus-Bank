@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 800;
+  color: purple;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: purple;
+}
+
+.btn {
+  background: purple;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #5a2d91;
+}
+
+.btn-outline {
+  display: inline-block;
+  margin-top: 20px;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background: purple;
+  font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn-outline:hover {
+  background: #5a2d91;
+  border-color: #5a2d91;
+}
+
+.hero {
+  padding: 60px 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-content .text {
+  flex: 1;
+}
+
+.hero-content .text h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-content .mockup img {
+  max-width: 100%;
+}
+
+.features,
+.benefits,
+.customizable {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.features img,
+.customizable img,
+.benefits img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.feature-text h3,
+.benefits h3 {
+  color: purple;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.feature-text h2,
+.benefits h2 {
+  font-size: 2rem;
+  margin: 10px 0 20px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.benefits-list ul {
+  flex: 1;
+}
+
+.benefits-list li {
+  margin-bottom: 10px;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.testimonial {
+  padding: 2rem;
+}
+
+.testimonial-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.avatar-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.avatar-cluster img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  max-width: 600px;
+}
+
+.testimonial-text h3 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.user {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #666;
+}
+
+.faq {
+  padding: 2rem;
+  background: #f8f8f8;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.faq-item {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.faq-item h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.faq-item.purple {
+  background: purple;
+  color: #fff;
+}
+
+.cta {
+  padding: 2rem;
+  text-align: center;
+  background: #0e001d;
+  color: #fff;
+}
+
+.cta .download-btn {
+  display: inline-block;
+  margin: 1rem auto;
+  padding: 0.75rem 1.5rem;
+  background: #fff;
+  color: #0e001d;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.cta .download-btn:hover {
+  background: #5a2d91;
+  color: #fff;
+}
+
+.mockups {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.mockups img {
+  width: 120px;
+  height: auto;
+}
+
+footer {
+  background: purple;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col h4, .footer-col h3 {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sub-btn {
+  background: #fff;
+  color: purple;
+  padding: 10px 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sub-btn:hover {
+  background: #5a2d91;
+  color: #fff;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-col input[type="email"]:focus {
+  outline: none;
+  border: 2px solid purple;
+}
+
+@media (max-width: 768px) {
+  .hero-content,
+  .features,
+  .benefits-list,
+  .customizable {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
